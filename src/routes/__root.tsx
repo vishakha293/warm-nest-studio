@@ -116,6 +116,16 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Handle GitHub Pages SPA redirect from 404.html
+    const redirect = sessionStorage.getItem("__gh_pages_redirect");
+    if (redirect) {
+      sessionStorage.removeItem("__gh_pages_redirect");
+      navigate({ to: redirect, replace: true });
+    }
+  }, [navigate]);
 
   return (
     <QueryClientProvider client={queryClient}>
