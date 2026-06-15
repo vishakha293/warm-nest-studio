@@ -65,7 +65,7 @@ function Index() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
                 <img
-                  src="/images/hero-living.jpg"
+                  src={`${import.meta.env.BASE_URL}images/hero-living.jpg`}
                   alt="Cozy minimalist living room with warm natural light and neutral tones"
                   className="h-full w-full object-cover"
                   width={1280}
@@ -140,7 +140,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-square overflow-hidden">
                 <img
-                  src="/images/cozy-bedroom.jpg"
+                  src={`${import.meta.env.BASE_URL}images/cozy-bedroom.jpg`}
                   alt="Serene minimalist bedroom with soft white bedding and warm neutral tones"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -162,7 +162,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-square overflow-hidden">
                 <img
-                  src="/images/home-office.jpg"
+                  src={`${import.meta.env.BASE_URL}images/home-office.jpg`}
                   alt="Beautiful home office nook with warm wood desk and ambient lighting"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -184,7 +184,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/kitchen.jpg"
+                  src={`${import.meta.env.BASE_URL}images/kitchen.jpg`}
                   alt="Warm Scandinavian-style kitchen with natural light and light wood cabinets"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -206,7 +206,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-square overflow-hidden">
                 <img
-                  src="/images/reading-nook.jpg"
+                  src={`${import.meta.env.BASE_URL}images/reading-nook.jpg`}
                   alt="Cozy reading corner with comfortable armchair and warm side lamp"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -228,7 +228,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-square overflow-hidden">
                 <img
-                  src="/images/entryway.jpg"
+                  src={`${import.meta.env.BASE_URL}images/entryway.jpg`}
                   alt="Beautifully styled entryway with wooden console table and round mirror"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -250,7 +250,7 @@ function Index() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-card">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/coffee-table.jpg"
+                  src={`${import.meta.env.BASE_URL}images/coffee-table.jpg`}
                   alt="Styled coffee table with candles, ceramic mug, and open book"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -273,7 +273,7 @@ function Index() {
           <div className="mt-6 group overflow-hidden rounded-2xl border border-border bg-card">
             <div className="aspect-[21/9] overflow-hidden sm:aspect-[3/1]">
               <img
-                src="/images/bathroom.jpg"
+                src={`${import.meta.env.BASE_URL}images/bathroom.jpg`}
                 alt="Minimalist bathroom with natural stone sink and warm wood accents"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
