@@ -6,10 +6,12 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Disable nitro/Cloudflare bundling so the TanStack Start prerender
+  // pipeline can spin up its own preview server and emit pure static HTML
+  // into dist/client — what GitHub Pages needs.
+  nitro: false,
   tanstackStart: {
     server: { entry: "server" },
-    // Statically prerender all routes so the build output works on
-    // pure-static hosts like GitHub Pages (no SSR server available).
     pages: [
       { path: "/" },
       { path: "/privacy-policy" },
